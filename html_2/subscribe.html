@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Subscribe to Eliot's Blog</title>
+
+		<style>
+			br {
+				margin: 1rem 0;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// onsubmit
+				// validate the fields
+				console.log('this is going to show up in the console! Hello World!')
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Subscribe</h1>
+
+		<a href="/index.html">Home</a>
+
+		<br />
+		<br />
+		<br />
+
+		<form action="/handle_subscribe" style="display: flex; flex-direction: column; max-width: 30%;">
+			<p>Subscribe Here:</p>
+
+			<label for="first-name">First Name</label>
+			<input type="text" name="first-name" placeholder="John" maxlength="32" />
+			<br />
+
+			<input type="search" value="botcheck" />
+
+			<label for="last-name">Last Name</label>
+			<input type="text" id="last-name" name="last-name" placeholder="Doe" />
+			<br />
+
+			<label for="crazy-name">Email</label>
+			<input type="email" name="crazy-name" />
+			<br />
+
+			<label for="newsletter">Get Email Alerts</label>
+			<input type="checkbox" name="newsletter" checked />
+
+			<br />
+
+			<label for="group1">Select Gender</label>
+			<fieldset class="radio-button-fields" id="group1">
+				<label for="male">Male</label>
+				<input type="radio" id="male" value="radio1" name="group1" />
+
+				<label for="female">Female</label>
+				<input type="radio" id="female" value="radio2" name="group1" />
+
+				<label for="na">Prefer Not to Say</label>
+				<input type="radio" id="na" value="radio3" name="group1" />
+			</fieldset>
+
+			<!-- <input type="button" value="Submit" aria-label="submit the subscribe form for newsletters" /> -->
+			<button aria-label="submit the subscribe form for newsletters">Button</button>
+			<!-- <button type="submit">Button</button> -->
+		</form>
+
+		<label for="textarea-test"></label>
+		<textarea name="textarea-test" id="textarea-test" cols="60" rows="39"></textarea>
+	</body>
+</html>
