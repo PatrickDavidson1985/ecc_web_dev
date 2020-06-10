@@ -1,0 +1,76 @@
+/* 
+#<id_name> === id="<id_name>"
+
+.<class_name> === class="<class_name>"
+*/
+
+/* Normalizing */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 16px;
+    font-size: 16px;
+} */
+
+/* id="heading-one" */
+#heading-one {
+    color: red;
+    text-decoration: underline;
+    line-height: 3rem;
+}
+
+/* class="article-class" */
+.article-class {
+    /* color: rgba(255, 160, 144, 0.6); */
+    /* background-image: url('../images/yosemite.jpg'); */
+    min-height: 100vh;
+    border: 2px solid black;
+    position: relative;
+}
+
+/*
+All span elements, but we only want the second span.
+span {
+    color: blue;
+}
+*/
+
+.article-class .visiting-hours span {
+    color: blue;
+}
+
+p {
+    font-family: sans-serif !important;
+}
+
+p.visiting-hours {
+    font-family: serif;
+    color: greenyellow;
+}
+
+h1, h2, h3 {
+    font-size: 20px;
+}
+h1, p, article.article-class {
+    color:purple;
+}
+
+[href="http://google.com"] {
+    color: pink;
+}
+
+[data-log="different"] {
+    color: maroon;
+}
+
+div.circle {
+    background-color: green;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+}
+
+div.list ul {
+    list-style: square;
+}

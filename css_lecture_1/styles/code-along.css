@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: slategray;
+    font-family: sans-serif;
+}
+
+header, footer {
+    background: #212121;
+    color: #ffffff;
+    padding: 16px;
+}
+
+h1, h2, h3 {
+    margin: 16px 0;
+}
+
+article.article {
+    margin: 16px 10px;
+}
+
+p {
+    margin: 12px 0;
+}
