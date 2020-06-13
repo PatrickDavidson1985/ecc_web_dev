@@ -1,0 +1,105 @@
+/* Styles for Medium article clone */
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.font-sans-serif { /* Modifier */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* END Typography */
+
+/* Nav */
+nav {
+    background: white;
+    box-shadow: 0 .125rem 8px rgba(226, 226, 226, 0.514);
+    margin-bottom: 1.6rem;
+}
+
+nav .nav-top, nav .nav-bottom {
+    padding: .725rem 1.2rem;
+}
+
+/* Nav Top */
+nav .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav .nav-top .nav-top-left {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-top .nav-top-left img {
+    max-width: 2.125rem;
+    max-height: 2.125rem;
+}
+
+/* Nav Bottom */
+nav .nav-bottom img {
+    max-width: 7.5rem;
+}
+/* END Nav */
+
+
+/* Paywall notice */
+.paywall-notice {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: .25rem;
+    margin: 0 .88rem;
+    padding: .75rem;
+}
+/* END Paywall Notice */
+
+/* Header */
+header .author-byline img {
+    border-radius: 50%;
+    max-width: 5rem;
+}
+/* END Header */
+
+/* Footer */
+footer {
+    background-color: #141414;
+    padding: 2rem;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* END Footer */
+
+/* Modifiers */
+.mx-1 {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+/* Desktop Media Queries */
+@media screen and (min-width: 30rem) {
+  
+    /* Modifiers */
+    main {
+        max-width: 52rem;
+        margin: 0 auto;
+    }
+
+    article figure img {
+        max-width: 30rem;
+    }
+
+}
+/* viewport = immediate visible width and the height of the DOM/window
+            what you are currently observing as the user
+            (dimensions) */
