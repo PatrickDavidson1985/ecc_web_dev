@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 .font-sans-serif { /* Modifier */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+i {
+    color: black;
+    font-size: 1.33rem !important;
+}
 /* END Typography */
 
 /* Nav */
@@ -61,6 +66,31 @@ nav .nav-bottom img {
 /* END Paywall Notice */
 
 /* Header */
+header .author-byline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .author-byline .author-byline-left {
+    display: flex;
+    align-items: center;
+}
+
+/* header .author-byline .author-byline-left .author-byline-text {
+    display: flex;
+    flex-direction: column;
+} */
+
+header .author-byline .author-byline-right a {
+    margin-right: .5rem;
+}
+
+header .author-byline .author-byline-right a:last-of-type {
+    margin-right: 0;
+}
+
 header .author-byline img {
     border-radius: 50%;
     max-width: 5rem;
@@ -80,6 +110,8 @@ footer a {
 }
 /* END Footer */
 
+
+
 /* Modifiers */
 .mx-1 {
     margin-right: 1.25rem;
@@ -95,8 +127,11 @@ footer a {
         margin: 0 auto;
     }
 
+    article figure {
+        margin: 0;
+    }
     article figure img {
-        max-width: 30rem;
+        max-width: 100%;
     }
 
 }
