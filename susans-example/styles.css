@@ -46,3 +46,14 @@ img {
    font-weight: 300;
    font-size: 14px; 
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .article-link {
+        margin: 16px 6px;
+    }
+}
