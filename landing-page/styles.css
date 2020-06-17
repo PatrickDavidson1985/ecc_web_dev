@@ -60,3 +60,57 @@ footer {
     padding: 2rem;
     color: white;
 }
+
+/* EXAMPLE */
+.container {
+    margin: 0 auto;
+    max-width: 75%;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.container .column {
+    margin-right: 20px;
+    padding: 44px;
+    font-size: 28px;
+    flex: 1 1 0;
+}
+.container .column:last-of-type {
+    margin-right: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-green {
+    background: green;
+}
+.bg-red {
+    background: red;
+}
+.bg-orange {
+    background: orange;
+}
+
+/* Media */
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .container .column {
+        margin: 0;
+    }
+
+    #signup-form {
+        max-width: 100%;
+    }
+
+    #signup-form form {
+        max-width: 100%;
+    }
+}
