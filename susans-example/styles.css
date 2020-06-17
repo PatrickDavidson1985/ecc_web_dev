@@ -1,0 +1,48 @@
+/* Susan's Example CSS */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+/* FOCUS ON THIS CODE BELOW */
+.container {
+    display: flex;
+}
+
+.article-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-link .article-text {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid red;
+    margin-right: 40px;
+}
+
+.article-link .text a {
+    color: black;
+    text-decoration: none;
+}
+
+.article-link .article-link-img {
+    max-width: 88px;
+    border: 4px solid blue;
+}
+
+
+/* Modifiers */
+.text-bold {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text-tiny {
+   font-weight: 300;
+   font-size: 14px; 
+}

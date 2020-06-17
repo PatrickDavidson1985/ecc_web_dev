@@ -97,6 +97,20 @@ img {
     background: orange;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    margin-right: 16px;
+    font-size: 30px;
+}
+nav a:last-of-type {
+    margin-right: 0;
+}
+
 /* Mobile Devices */
 @media screen and (max-width: 375px) {
     /* Navbar */
@@ -136,3 +150,13 @@ img {
         max-width: 100%;
     }
 }
+
+/* Tablets */
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+
+}
+
+/* Computer Screen
+
+IF our computer screen has a width between 376px and 1024px
+THEN we want to implement TABLET styles. */
