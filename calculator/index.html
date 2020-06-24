@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input {
+                width:280px;
+                background-color:darkslategrey;
+                font-size: 28px;
+                color:white;
+                padding:10px;
+                text-align:right;
+            }
+            button {
+                width:75px;
+                height:75px;
+                font-size:18px;
+            }
+            button.funcs {
+                background-color:rgb(64, 100, 100);
+            }
+            button#zero {
+                width:150px;
+            }
+        </style>
+        <script>
+
+            var y = "";
+            //find the substring d in y, it would return false, because it isn't found
+            var x = "david";
+            // find the substring d in x, it would return 0, because d is at position 0
+
+            // with the triple equals it prevents the next statement from evaluating as true accidentally.
+            if (x === y) {
+                alert("you won a million dolllars");
+            }
+
+            var firstnum="";
+            var operator="";
+            var oper_was_last=false;
+            var should_we_perform_eq=false;
+
+            function calc(num) {
+
+                var total = String(document.getElementById("total").value);
+
+                switch (num) {
+                    case "AC":
+                        firstnum="";
+                        operator="";
+                        oper_was_last=false;
+                        should_we_perform_eq=false;
+                        document.getElementById("total").value = "0";
+                        break;
+                    case "C":
+                        document.getElementById("total").value = "0";
+                        break;
+                    case "+/-":
+                        total = parseFloat(total) * -1;
+                        document.getElementById("total").value = total;
+                        break;
+                    case "-":
+                    case "*":
+                    case "/":
+                    case "+":
+                        operator=num;
+                        // if (firstnum !== "") {
+                        //     should_we_perform_eq = true;
+                        // }
+                        firstnum = total;
+                        oper_was_last = true;
+                        break;
+                    case "=":
+                        // if (!should_we_perform_eq) {
+                        //     break;
+                        // }
+                        let sum = 0;
+                        switch(operator) {
+                            case "+":
+                                sum = parseFloat(firstnum) + parseFloat(total);
+                                break;
+                            case "-":
+                                sum = parseFloat(firstnum) - parseFloat(total);
+                                break;
+                            case "*":
+                                sum = parseFloat(firstnum) * parseFloat(total);
+                                break;
+                            case "/":
+                                sum = parseFloat(firstnum) / parseFloat(total);
+                                break;
+                            default: 
+                                alert("invalid operation");
+                                break;
+                        }
+                        document.getElementById("total").value=sum;
+                        // firstnum = sum;
+
+                        break;
+                    default:
+                        // check to see if firstnum has a value, 
+                        // if it does we need to clear total before putting the next number in the box
+
+                        if (oper_was_last) {
+                            total = "";
+                            oper_was_last = false;
+                        }
+
+                        // check to see if there is a value in the total box
+                        // if there is a value take the existing value and append the new number
+                        if (total === "0") {
+                            total = "";
+                        }
+                        num = String(num);
+                        document.getElementById("total").value=total + num;
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input id="total" type="text" name="calculation" readonly="true" value="0">
+        <br>
+        <button onClick="calc('AC');" class="funcs">AC</button><button onClick="calc('+/-');" class="funcs">+/-</button><button class="funcs">%</button><button onClick="calc('/');">/</button>
+        <br>
+        <button onClick="calc(7);">7</button><button onClick="calc(8);">8</button><button onClick="calc(9);">9</button><button onClick="calc('*');">*</button>
+        <br>
+        <button>4</button><button>5</button><button>6</button><button onClick="calc('-');">-</button>
+        <br>
+        <button>1</button><button>2</button><button>3</button><button onClick="calc('+')">+</button>
+        <br>
+        <button>0</button><button onClick="calc('C');" class="funcs">C</button><button>.</button><button onClick="calc('=')">=</button>
+    </body>
+</html>
