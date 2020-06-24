@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <form action="#" method="POST" name="apply">
+        <input type="text" id="username" placeholder="username">
+        <br>
+        <input type="password" id="Password" placeholder="password">
+        <br>
+        <input type="submit" name="submit" onclick="validate()">
+    </form>
+    <script>
+        function validate(){
+            var pwd = document.forms["apply"]["Password"].value;
+            var username = document.forms["apply"]["username"].value;
+
+            if(pwd == ""){
+                alert("Please put your password!");
+            }
+            if(username == ""){
+                alert("Please put your username!");
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+    <p id="main"> This is var vs let</p>
+    <script>
+        function varTest(){
+            let x = "animal";
+            {
+                let x = "cat";
+                console.log(x);
+            }
+            console.log(x);
+        }
+        varTest();
+    </script>
+</html>
