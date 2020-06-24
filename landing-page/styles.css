@@ -1,0 +1,162 @@
+/* Landing Page Styles */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, 
+        rgba(245, 246, 252, 0.72), 
+        rgba(117, 19, 93, 0.93)),
+        url('./images/stars-timelapse.jpg');
+    /* background: url('./images/stars-timelapse.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 30rem;
+    padding: 2rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+article {
+    max-width: 30rem;
+}
+
+/* Signup Form */
+#signup-form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid dodgerblue;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px gray;
+    background-color: #cccccc;
+}
+
+#signup-form form input {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+#signup-form form button {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 6px;
+    padding: .25rem;
+    font-size: 1.5rem;
+    text-align: start;
+}
+/* END Signup Form */
+
+footer {
+    background: #111010;
+    padding: 2rem;
+    color: white;
+}
+
+/* EXAMPLE */
+.container {
+    margin: 0 auto;
+    max-width: 75%;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.container .column {
+    margin-right: 20px;
+    padding: 44px;
+    font-size: 28px;
+    flex: 1 1 0;
+}
+.container .column:last-of-type {
+    margin-right: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-green {
+    background: green;
+}
+.bg-red {
+    background: red;
+}
+.bg-orange {
+    background: orange;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    margin-right: 16px;
+    font-size: 30px;
+}
+nav a:last-of-type {
+    margin-right: 0;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 375px) {
+    /* Navbar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #212121;
+        /* opacity: 60%; */
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    /* END Navbar */
+
+
+    /* ... */
+    .container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .container .column {
+        margin: 0;
+    }
+
+    #signup-form {
+        max-width: 100%;
+    }
+
+    #signup-form form {
+        max-width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+
+}
+
+/* Computer Screen
+
+IF our computer screen has a width between 376px and 1024px
+THEN we want to implement TABLET styles. */
