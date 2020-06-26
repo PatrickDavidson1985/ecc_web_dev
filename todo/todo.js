@@ -27,4 +27,24 @@ addTodoButton.addEventListener('click', function() {
     }
 });
 
-// Generate.
+// Generate todo (<li>) element
+// function generateTodo(todo) {
+//     const task = document.createElement('li');
+//     const taskText = document.createElement('span');
+//     const checkbox = document.createElement('input');
+//     const deleteButton = document.createElement('button');
+
+//     // Checkbox.
+//     checkbox.setAttribute('type', 'checkbox');
+
+//     // Insert text
+//     taskText.innerText = todo;
+
+//     // Build the task item.
+//     task.appendChild(checkbox);
+//     task.appendChild(taskText);
+
+//     return task;
+// }
+
+// todoList.appendChild(generateTodo('__test__'))
