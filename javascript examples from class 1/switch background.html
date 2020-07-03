@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <body id="bb">
+        <button id="b" onClick="changeBackground('white')">White!</button>
+        <button id="b" onClick="changeBackground('blue')">blue!</button>
+        <button id="b" onClick="changeBackground('black')">black!</button>
+    </body>
+
+    <script>
+        function changeBackground(currentColor){
+            var bg = document.getElementById("bb");
+
+            switch(currentColor){
+                case "white":
+                    bg.style.backgroundColor="#000000";
+                    break;
+                case "black":
+                    bg.style.backgroundColor="#ffffff";
+                    break;
+                case "blue":
+                    bg.style.backgroundColor="#ff0000";
+                    break;
+            }
+        }
+    </script>
+
+</html>

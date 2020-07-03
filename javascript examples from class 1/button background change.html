@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <body id="bb">
+        <button id="b" onClick="changeBackground()">Click me!</button>
+    </body>
+
+    <script>
+        function changeBackground(){
+            var color = "white";
+            var bg = document.getElementById("bb");
+            if(color == "white"){
+                bg.style.backgroundColor="#000000";
+            }else{
+                bg.style.backgroundColor="#fffff0";
+            }
+        }
+    </script>
+
+</html>
