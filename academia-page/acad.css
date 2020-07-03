@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+section.faculty {
+    background-color: #d6d6d6;
+    padding: 44px 30px;
+}
+
+section.faculty .section-title {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    border-left: 4px solid red;
+    padding-left: 10px;
+    position: relative;
+}
+
+section.faculty .section-title::before {
+    content: '►';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 16px;
+}
+
+section.faculty .section-title span {
+    color: red;
+    font-weight: 600;
+}
+
+.flex-container {
+    display: flex;
+    flex: 0 1 auto;
+    padding: 44px 0;
+}
+
+/* .flex-container .flex-column:first-child {
+    margin-right: 16px;
+    background: url('https://freephotos.cc/storage/path/oTvLhde3Llu6WFK8is7tQJqCuGJcNgRaJlnmPH66.jpeg');
+    background-size: cover;
+    background-position: center center;
+    min-width: 200px;
+    min-height: 400px;
+}
+.flex-container .flex-column {
+    margin-right: 16px;
+    background: url('https://freephotos.cc/storage/path/MBU95xJba7biK8Th4G7OQPGDEfWSSjF9yOoMt8IX.jpeg');
+    background-size: cover;
+    background-position: center center;
+    min-width: 200px;
+    min-height: 400px;
+} */
+
+
+.flex-container .flex-column.img-wrapper {
+    height: 300px;
+    width: 180px;
+    overflow: hidden;
+    margin-right: 14px;
+}
+.flex-container .flex-column.img-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.flex-container .img-wrapper img {
+    min-height: 300px;
+}
