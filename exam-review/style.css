@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+p:last-of-type {
+    color: gray;
+}
+
+.container {
+    display: flex;
+}
+
+.container .column {
+/*  */
+}

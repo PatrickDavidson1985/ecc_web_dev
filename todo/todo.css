@@ -1,0 +1,9 @@
+/* Todo Styles */
+
+body {
+    background-color: #ccc;
+}
+
+ul#todoList {
+    list-style: none;
+}
